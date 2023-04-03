@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Header from '@components/Header.jsx'
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
-    <div className='Layout'>
-        { children }
+    <div>
+      <Header />
+      { children }
     </div>
-  )
+  );
 }
+
+export default Layout;
